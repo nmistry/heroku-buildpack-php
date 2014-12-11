@@ -2,6 +2,9 @@
 
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
+## this is a temporary hack 
+apt-get update && apt-get install -y libreadline5
+
 install_ext () {
     local ext=$1
     local reason=${2:-}
