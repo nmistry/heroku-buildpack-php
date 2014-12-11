@@ -2,9 +2,9 @@
 
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
-## this is a temporary hack 
-apt-get update && apt-get install -y libreadline5
+wget -O /tmp/libreadline5_5.2+dfsg-2_amd64.deb http://mirrors.kernel.org/ubuntu/pool/main/r/readline5/libreadline5_5.2+dfsg-2_amd64.deb && dpkg -i /tmp/libreadline5_5.2+dfsg-2_amd64.deb
 
+## this is a temporary hack 
 install_ext () {
     local ext=$1
     local reason=${2:-}
